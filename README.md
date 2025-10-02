@@ -27,7 +27,6 @@ Objetivo: implementar autenticação de usuários via Supabase em um site de fil
 ### Página Principal
 ![Home](https://github.com/user-attachments/assets/d8f5a922-5b78-4122-824c-93649eba9f54)
 
-
 ## Como rodar o projeto
 1. Clone este repositório
    ```bash
