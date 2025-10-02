@@ -18,19 +18,20 @@ Objetivo: implementar autenticação de usuários via Supabase em um site de fil
 - Notificação de boas-vindas com e-mail do usuário
 
 ## Demonstração
-## Tela de Cadastro
-![Cadastro](https://github.com/user-attachments/assets/5be42a38-8aed-4199-9c62-8c5761121413)
 
-### Tela de Login
-![Login]([https://github.com/user-attachments/assets/c3900279-3996-4bd2-abcb-beaf6ab32a40](https://github.com/user-attachments/assets/d319aceb-4af4-4a93-a749-3e46bb405ce3))
+### Tela de Cadastro
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5be42a38-8aed-4199-9c62-8c5761121413" alt="Cadastro" width="900">
+</p>
 
-### Página Principal
-![Home]([https://github.com/user-attachments/assets/d8f5a922-5b78-4122-824c-93649eba9f54](https://github.com/user-attachments/assets/faec58bf-3e6f-427d-b5d4-4ff06ac05c54))
+### Telas de Login e Página Principal
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d319aceb-4af4-4a93-a749-3e46bb405ce3" alt="Login" width="48%">
+  <img src="https://github.com/user-attachments/assets/faec58bf-3e6f-427d-b5d4-4ff06ac05c54" alt="Home" width="48%">
+</p>
 
 ## Como rodar o projeto
 1. Clone este repositório
-   ```bash
-   git clone https://github.com/seu-usuario/tableflix-supabase-auth.git
-<img width="1918" height="956" alt="Image" src="https://github.com/user-attachments/assets/d319aceb-4af4-4a93-a749-3e46bb405ce3" />
+```bash
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
 
-<img width="1903" height="956" alt="Image" src="https://github.com/user-attachments/assets/faec58bf-3e6f-427d-b5d4-4ff06ac05c54" />
