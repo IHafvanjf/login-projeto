@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="styles.css">    
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <h1 class="txt">TABLEFLIX</h1>
+    </div>
+    
+    <div class="background-overlay">
+        <img src="./img/imgNav.jpg" alt="Banner Tableflix">
+        <h1 class="titulo-site" id="tituloDigitando">
+            <span id="textoDigitando"></span><span class="cursor">|</span>
+        </h1>        
+    </div>
+
+    <div class="voltar" onclick="logout()">
+        <img src="./img/voltar.png" alt="Voltar">
+        <span>Sair</span>
+    </div>
+
+    <div class="notification" id="notification">
+        <div class="card">
+            <svg class="wave" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,256L11.4,240C22.9,224,46,192,69,192C91.4,192,114,224,137,234.7C160,245,183,235,206,213.3C228.6,192,251,160,274,149.3C297.1,139,320,149,343,181.3C365.7,213,389,267,411,282.7C434.3,299,457,277,480,250.7C502.9,224,526,192,549,181.3C571.4,171,594,181,617,208C640,235,663,277,686,256C708.6,235,731,149,754,122.7C777.1,96,800,128,823,165.3C845.7,203,869,245,891,224C914.3,203,937,117,960,112C982.9,107,1006,181,1029,197.3C1051.4,213,1074,171,1097,144C1120,117,1143,107,1166,133.3C1188.6,160,1211,224,1234,218.7C1257.1,213,1280,139,1303,133.3C1325.7,128,1349,192,1371,192C1394.3,192,1417,128,1429,96L1440,64L1440,320L0,320Z"
+                    fill-opacity="1"></path>
+            </svg>
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
+                    <path
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z">
+                    </path>
+                </svg>
+            </div>
+            <div class="message-text-container">
+                <p class="message-text">Bem-vindo!</p>
+                <p class="sub-text" id="email-text">Email</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="cross-icon" onclick="closeNotification()">
+                <path fill="currentColor"
+                    d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+                    clip-rule="evenodd" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="destaque-container">
+        <h2>Destaques</h2>
+        <div class="filmesDestaque">
+            <div><img src="./img/normbit.jpg" data-titulo="Normbit" data-descricao="Normbit é um filme de animação que segue as aventuras de um coelho muito especial em uma jornada para salvar sua família." data-link="https://pobreflixtv.mobi/assistir-norbit-dublado-online-2219/"></div>
+            <div><img src="./img/Movie Detail - fanart_tv.jpg" data-titulo="Bad Boys" data-descricao="Dois tiras negros de Miami (Lawrence e Smith) têm 72 horas para solucionar o roubo de uma carga de heroína que havia sido apreendida pela polícia. Para isso, dão um mergulho no mundo das drogas por meio de uma informante que é assassinada pelos bandidos. Tea Leoni, uma lindíssima fotógrafa e ninfomaníaca nas horas vagas é a única testemunha do assassinato que pode levar a dupla aos culpados." data-link="https://pobreflixtv.mobi/assistir-os-bad-boys-dublado-online-264/"></div>
+            <div><img src="./img/Jumanji, el siguiente nivel (2019) - Por siempre para siempre_.jpg" data-titulo="Jumanji" data-descricao="Os mesmos heróis de Jumanji retornam para uma nova aventura no perigoso mundo do jogo, agora com novos desafios e personagens." data-link="https://pobreflixtv.mobi/assistir-jumanji-proxima-fase-dublado-online-345/"></div>
+            <div><img src="./img/Filme grown ups (gente grande).jpg" data-titulo="Gente Grande" data-descricao="Um grupo de amigos de infância se reúne após 30 anos para passar um fim de semana juntos com suas famílias." data-link="https://pobreflixtv.mobi/assistir-gente-grande-dublado-online-346/"></div>
+            <div><img src="./img/American Pie cast Alyson Hannigan, Jason Biggs and more reunite.jpg" data-titulo="American Pie" data-descricao="Um grupo de amigos do ensino médio faz um pacto para perder a virgindade antes da formatura." data-link="https://pobreflixtv.mobi/assistir-american-pie-a-primeira-vez-e-inesquecivel-dublado-online-243/"></div>
+            <div><img src="./img/֙⋆ 🩰 𖥻 𝗴𝗰𝗳𝗯𝘁𝘀𝘁𝗮𝗿 𖦆ˑ 𖥻.jpeg" data-titulo="Breaking Bad" data-descricao="Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos." data-link="https://pobreflixtv.mobi/assistir-breaking-bad-a-quimica-do-mal-dublado-online-3413/"></div>
+            <div><img src="./img/Ralph el Demoledor.jpg" data-titulo="Detona Ralph" data-descricao="Ralph, o vilão de um jogo de fliperama, que quer provar que pode ser um herói." data-link="https://pobreflixtv.mobi/assistir-detona-ralph-dublado-online-371/"></div>
+            <div><img src="./img/Brooklyn 99 Posters.jpeg" data-titulo="Brooklyn Nine-Nine" data-descricao="Comédia policial que segue os detetives excêntricos do 99º Distrito do Brooklyn." data-link="https://pobreflixtv.mobi/assistir-brooklyn-nine-nine-lei-e-desordem-dublado-online-43392/"></div>
+            <div><img src="./img/Dexter.jpeg" data-titulo="Dexter" data-descricao="Dexter Morgan é um perito forense especializado em análise de padrões de sangue que também é um serial killer." data-link="https://pobreflixtv.mobi/assistir-dexter-pecado-original-dublado-online-45174/"></div>
+            <div><img src="./img/download (1).jpg" data-titulo="As Branquelas" data-descricao="Duas jovens socialites, que só se preocupam com compras e a aparência, sofrem uma ameaça de seqüestro. Para garantir a segurança das irmãs Brittany e Tiffany Wilson numa viagem até um badalado hotel, os agentes Kevin e Marcus são designados para escoltá-las." data-link="https://pobreflixtv.mobi/assistir-as-branquelas-dublado-online-595/"></div>
+            <div><img src="./img/Season 7 Of Suits at Cathyangel.jpeg" data-titulo="Suits" data-descricao="Um jovem brilhante, mas sem diploma de direito, consegue um emprego em um prestigiado escritório de advocacia." data-link="https://pobreflixtv.mobi/assistir-suits-la-legendado-online-46943/"></div>
+        </div>
+
+        <h2>Filmes</h2>
+        <div class="filmes">
+            <div><img src="./img/American Pie cast Alyson Hannigan, Jason Biggs and more reunite.jpg" data-titulo="American Pie" data-descricao="Um grupo de amigos do ensino médio faz um pacto para perder a virgindade antes da formatura." data-link="https://pobreflixtv.mobi/assistir-american-pie-a-primeira-vez-e-inesquecivel-dublado-online-243/"></div>
+            <div><img src="./img/capa-dvd-meu-malvado-favorito-3.jpg" data-titulo="Meu Malvado Favorito 3" data-descricao="Gru encontra seu irmão gêmeo, Dru, e é tentado a voltar para uma vida de crime." data-link="https://pobreflixtv.mobi/assistir-meu-malvado-favorito-3-dublado-online-430/"></div>
+            <div><img src="./img/download (1).jpg" data-titulo="As Branquelas" data-descricao="Duas jovens socialites, que só se preocupam com compras e a aparência, sofrem uma ameaça de seqüestro. Para garantir a segurança das irmãs Brittany e Tiffany Wilson numa viagem até um badalado hotel, os agentes Kevin e Marcus são designados para escoltá-las." data-link="https://pobreflixtv.mobi/assistir-as-branquelas-dublado-online-595/"></div>
+            <div><img src="./img/download (2).jpg" data-titulo="Garfield 2" data-descricao="Garfield é um gato sarcástico do interior que odeia segundas-feiras e adora lasanha. Depois de um reencontro inesperado com Vic, seu pai que é um gato de rua e estava há tempos sumido, ele embarca em uma aventura selvagem ao ar livre, sendo obrigado a abandonar a vida perfeita." data-link="https://pobreflixtv.mobi/assistir-garfield-o-filme-dublado-online-232/"></div>
+            <div><img src="./img/download.jpg" data-titulo="Esposa de mentirinha" data-descricao="Um cirurgião plástico de caso com uma professora bem mais jovem pede à sua leal assistente que finja ser a esposa de quem ele está se divorciando para encobrir uma mentirinha casual. Após mais mentiras que saem pela culatra, os filhos da sua assistente também acabaram envolvidos, e todo o grupo parte para um fim de semana no Havaí que mudará as vidas de todos eles." data-link="https://pobreflixtv.mobi/assistir-esposa-de-mentirinha-dublado-online-921/"></div>
+            <div><img src="./img/Filme grown ups (gente grande).jpg" data-titulo="Gente Grande" data-descricao="Um grupo de amigos de infância se reúne após 30 anos para passar um fim de semana juntos com suas famílias." data-link="https://pobreflixtv.mobi/assistir-gente-grande-dublado-online-346/"></div>
+            <div><img src="./img/Movie Detail - fanart_tv.jpg" data-titulo="Bad Boys" data-descricao="Dois tiras negros de Miami (Lawrence e Smith) têm 72 horas para solucionar o roubo de uma carga de heroína que havia sido apreendida pela polícia. Para isso, dão um mergulho no mundo das drogas por meio de uma informante que é assassinada pelos bandidos. Tea Leoni, uma lindíssima fotógrafa e ninfomaníaca nas horas vagas é a única testemunha do assassinato que pode levar a dupla aos culpados." data-link="https://pobreflixtv.mobi/assistir-os-bad-boys-dublado-online-264/"></div>
+            <div><img src="./img/normbit.jpg" data-titulo="Normbit" data-descricao="Normbit é um filme de animação que segue as aventuras de um coelho muito especial em uma jornada para salvar sua família." data-link="https://pobreflixtv.mobi/assistir-norbit-dublado-online-2219/"></div>
+            <div><img src="./img/Ralph el Demoledor.jpg" data-titulo="Detona Ralph" data-descricao="Ralph, o vilão de um jogo de fliperama, que quer provar que pode ser um herói." data-link="https://pobreflixtv.mobi/assistir-detona-ralph-dublado-online-371/"></div>
+            <div><img src="./img/Se beber não case - Parte I  (Abril_TV).jpg" data-titulo="Se Beber, Não Case" data-descricao="Três amigos perdem o noivo durante sua despedida de solteiro em Las Vegas e precisam encontrá-lo antes do casamento." data-link="https://pobreflixtv.mobi/assistir-se-beber-nao-case-dublado-online-149/"></div>
+            <div><img src="./img/Shrek 2 (2004).jpg" data-titulo="Shrek 2" data-descricao="Shrek e Fiona retornam de sua lua de mel para encontrar um convite dos pais de Fiona para um jantar real." data-link="https://pobreflixtv.mobi/assistir-shrek-2-dublado-online-201/"></div>
+            <div><img src="./img/TED.jpg" data-titulo="Ted" data-descricao="John Bennett, um homem adulto, deve decidir entre ficar com seu ursinho de pelúcia falante ou com sua namorada." data-link="https://pobreflixtv.mobi/assistir-ted-dublado-online-998/"></div>
+        </div>
+
+        <h2>Séries</h2>
+        <div class="series">
+            <div><img src="./img/breakingBead.jpeg" data-titulo="Breaking Bad" data-descricao="Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos." data-link="https://pobreflixtv.mobi/assistir-breaking-bad-a-quimica-do-mal-dublado-online-3413/"></div>
+            <div><img src="./img/You (Netflix).jpeg" data-titulo="You" data-descricao="Um gerente de livraria obsessivo usa a internet e as mídias sociais para se aproximar da mulher por quem ele se apaixona." data-link="https://pobreflixtv.mobi/assistir-voce-dublado-h1-online-1956/"></div>
+            <div><img src="./img/The Boys poster.jpeg" data-titulo="The Boys" data-descricao="Em um mundo onde super-heróis abusam de seus superpoderes, um grupo de vigilantes luta para mantê-los sob controle." data-link="https://pobreflixtv.mobi/assistir-the-boys-dublado-h11-online-854/"></div>
+            <div><img src="./img/la casa de papel.jpeg" data-titulo="La Casa de Papel" data-descricao="Oito ladrões fazem reféns e se trancam na Casa da Moeda da Espanha enquanto seu líder manipula a polícia para realizar seu plano." data-link="https://pobreflixtv.mobi/assistir-la-casa-de-papel-dublado-online-25/"></div>
+            <div><img src="./img/PEAKY BLINDERS.jpeg" data-titulo="Peaky Blinders" data-descricao="A gangue criminosa Peaky Blinders, baseada em Birmingham, cresce enquanto seu líder Tommy Shelby ambiciona mais poder." data-link="https://pobreflixtv.mobi/assistir-peaky-blinders-sangue-apostas-e-navalhas-dublado-online-81/"></div>
+            <div><img src="./img/POSTER STOP ONLINE Hunter X Hunter - Manga_Anime TV Show Poster (Key Art - Running) (Size 24 x 36).jpeg" data-titulo="Hunter x Hunter" data-descricao="Gon Freecss embarca em uma aventura para se tornar um Hunter e encontrar seu pai desaparecido." data-link="https://www.anitube.vip/anime/023f25d55b03bebe148461464e256c717ec5087f"></div>
+            <div><img src="./img/Season 7 Of Suits at Cathyangel.jpeg" data-titulo="Suits" data-descricao="Um jovem brilhante, mas sem diploma de direito, consegue um emprego em um prestigiado escritório de advocacia." data-link="https://pobreflixtv.mobi/assistir-suits-la-legendado-online-46943/"></div>
+            <div><img src="./img/Prison Break.jpeg" data-titulo="Prison Break" data-descricao="Um homem arquiteta um plano elaborado para ajudar seu irmão, condenado à morte por um crime que não cometeu, a escapar da prisão." data-link="https://pobreflixtv.mobi/assistir-prison-break-em-busca-da-verdade-dublado-online-9741/"></div>
+            <div><img src="./img/Brooklyn 99 Posters.jpeg" data-titulo="Brooklyn Nine-Nine" data-descricao="Comédia policial que segue os detetives excêntricos do 99º Distrito do Brooklyn." data-link="https://pobreflixtv.mobi/assistir-brooklyn-nine-nine-lei-e-desordem-dublado-online-43392/"></div>
+            <div><img src="./img/Mark sinistro wallpaper.jpeg" data-titulo="Invencível" data-descricao=" Mark Grayson, de 17 anos, um cara como qualquer outro de sua idade, exceto que seu pai é o super-herói mais poderoso do planeta, Omni-Man. Porém, à medida que Mark desenvolve seus próprios poderes, ele descobre que o legado de seu pai pode não ser tão heroico quanto parece." data-link="https://pobreflixtv.mobi/assistir-invencivel-dublado-h6-online-1118/"></div>
+            <div><img src="./img/Rick and Morty (2013).jpeg" data-titulo="Rick and Morty" data-descricao="As aventuras interdimensionais de um cientista louco e seu neto inseguro." data-link="https://pobreflixtv.mobi/assistir-rick-e-morty-dublado-h15-online-3293/"></div>
+        </div>
+
+        <div class="modal-filme" id="modalFilme">
+            <div class="modal-content">
+                <span class="modal-close" onclick="fecharModal()">&#10006;</span>
+                <img src="" alt="Imagem do Filme" id="modalImagem">
+                <div class="modal-info">
+                    <h3 id="modalTitulo">Título do Filme</h3>
+                    <p id="modalDescricao">Descrição do filme aqui.</p>
+                    <a id="modalLink" href="#" target="_blank"><button>BAIXAR</button></a>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
