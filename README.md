@@ -1,5 +1,7 @@
 # TableFlix – Página Estática no estilo Netflix  
 
+**Última revisão:** 08-2025
+
 Projeto desenvolvido como tarefa acadêmica com tema livre.  
 Atualização: inicialmente, o projeto utilizava o Supabase para autenticação e cadastro de usuários. Porém, por limitações do plano gratuito, o Supabase deixou de funcionar após alguns meses.  
 Por isso, esta versão foi simplificada e agora mantém apenas a página inicial estática com design e interatividade inspirados na Netflix.
